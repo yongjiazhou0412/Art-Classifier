@@ -83,7 +83,7 @@ uploaded_file = st.file_uploader("Upload a picture...", type=["jpg", "jpeg", "pn
 if uploaded_file is not None:
     # 打开图片
     image = Image.open(uploaded_file)
-    st.image(image, caption='Uploaded Picture', use_container_width=True)
+    st.image(image, caption='Uploaded Picture')
     # # 预处理图片
     # input_tensor = preprocess_image(image)
     
