@@ -93,7 +93,7 @@ if uploaded_file is not None:
         # 使用模型进行预测
         with torch.no_grad():
             output = model(input_tensor)
-            probabilities = torch.nn.functional.softmax(output[0], dim=0)
+            probabilities = torch.nn.functional.softmax(output[0], dim=1)
             predicted_class = torch.argmax(probabilities).item()
             
     # # 显示预测结果
