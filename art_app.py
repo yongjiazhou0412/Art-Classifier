@@ -42,7 +42,7 @@ def load_model(model_path, num_classes):
     return model
 
 # 读取 artists.csv 文件
-artists_df = pd.read_csv('artists.csv')
+artists_df = pd.read_csv('sorted_labels.csv')
 
 # 提取 name 列，并转换为列表
 class_names = artists_df['name'].tolist()
